@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>WKR</title>//page title
+  <title>WKR</title>
   <link rel="stylesheet" href="css/style.css"> <!-- style ref -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -20,9 +20,93 @@
   </nav>
 </header>
 
-<!-- Hero image : why tf is this called her -->
+<!-- Hero image : -->
 <section class = "hero">
-  <img src = "img/banner.jpg" alt = "Banner Image">
+  <div class = "hero-text">
+    <h1>Welcome to WKR</h1>
+    <p>junktopia</p>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section class="projects-section">
+  <!-- Full-width black title bar -->
+  <div class="projects-title-bar">
+    <h2>Current Projects</h2>
+  </div>
+  <div class="projects-intro">
+    <p>Here’s a glimpse at some of the machines I’ve built, tuned, and brought back from the dead. Each one tells its own story.</p>
+  </div>
+
+  <!-- Project 1 -->
+  <div class="project-wrapper">
+    <div class="project-subtitle-bar">
+      <h3>2011 Subaru WRX</h3>
+    </div>
+
+    <div class="project-content-box">
+      <div class="slideshow" data-autoplay="false">
+        <div class="slides">
+          <img src="img/project-1.jpg" class="slide is-active" alt="WRX slide 1">
+          <img src="img/project_1b.jpg" class="slide" alt="WRX slide 2">
+        </div>
+        <button class="nav prev" aria-label="Previous slide">‹</button>
+        <button class="nav next" aria-label="Next slide">›</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="project-description">
+        <p> The 2011 WRX has a 20G-TDO6, ID1000's, FMIC, Tial BOV, and a Tial 38mm wastegate. The car is tuned by me using cobb accesstuner. </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 -->
+  <div class="project-wrapper">
+    <div class="project-subtitle-bar">
+      <h3>2005 Audi A4</h3>
+    </div>
+
+    <div class="project-content-box">
+      <div class="slideshow" data-autoplay="false">
+        <div class="slides">
+          <img src="img/audip2i1.jpg" class="slide is-active" alt="Audi slide 1">
+          <img src="img/audipaint.jpg" class="slide" alt="Audi slide 2">
+        </div>
+        <button class="nav prev" aria-label="Previous slide">‹</button>
+        <button class="nav next" aria-label="Next slide">›</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="project-description">
+        <p>This car was purchased with the ecu cut out of it, a broken window, and no keys. the harness was repaired, I purchased new(used) ECUs for it and adapted them accordingly. I recieved skc logins with some internet tools and a vag kkl. Once that was all done the car did not move and needed a clutch. subsequently a clutch was put in it and its been running since.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Project 3 -->
+  <div class="project-wrapper">
+    <div class="project-subtitle-bar">
+      <h3>1991 RM125</h3>
+    </div>
+
+    <div class="project-content-box">
+      <div class="slideshow" data-autoplay="false">
+        <div class="slides">
+          <img src="img/rmfull.jpg" class="slide is-active" alt="RM125 slide 1">
+          <img src="img/rmengineinbike.jpg" class="slide" alt="RM125 slide 2">
+        </div>
+        <button class="nav prev" aria-label="Previous slide">‹</button>
+        <button class="nav next" aria-label="Next slide">›</button>
+        <div class="dots"></div>
+      </div>
+
+      <div class="project-description">
+        <p> This bike ran for a total of 25-35 minutes post purchase. after disassembly and inspection, many many issues were found. the crank assembly was junk. top end was junk. the crank was allegedly balanced and rebuilt. the cylinder was nikasil'd due to damage. we will find out if it explodes again soon.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <!-- Main Content -->
@@ -37,6 +121,7 @@
     <p> Provide contact form or email here </p>
     </section>
   </main>
-
+<script src="js/slideshow.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

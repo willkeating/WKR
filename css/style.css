@@ -290,3 +290,50 @@ h2 {
   padding-bottom: 8px;
   margin-top: 0;
 }
+/* ===== 1) Stop hero from zooming on mobile ===== */
+.hero {
+  /* keep your image + cover, but drop 'fixed' */
+  background: url("../img/WKR_Background.JPEG") center 60% / cover no-repeat;
+}
+
+/* On small screens, reduce height a bit for better composition */
+@media (max-width: 768px) {
+  .hero {
+    height: 55vh;          /* was 73.5vh */
+    background-position: center center;  /* recentre for phones */
+  }
+}
+
+/* ===== 2) Kill horizontal scroll safely ===== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;   /* hard stop any sideways scroll */
+  margin: 0;
+  padding: 0;
+}
+
+/* Media should never exceed the viewport width */
+img, video, canvas {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Slideshow: ensure nothing pokes out */
+.slideshow { position: relative; overflow: hidden; }
+.slides { overflow: hidden; }              /* you already have this, keep it */
+.slide { max-width: 100%; }                /* belt-and-suspenders */
+
+/* Arrow buttons must live inside the box (avoid accidental overflow) */
+.slideshow .nav { left: 10px; right: auto; }
+.slideshow .nav.next { right: 10px; left: auto; }
+
+/* Any full-width bars should be 100% (not 100vw) */
+.navbar, .projects-title-bar, .project-subtitle-bar, .projects-section {
+  width: 100%;
+}
